@@ -130,11 +130,10 @@ archive 中的旧设计或旧说明不能作为当前事实实施。
 
 ### 第一步：恢复上下文
 优先阅读：
-
 1. `../constraints/current/project-status.md`
-2. `../constraints/current/requirements.md`
-3. `../constraints/current/api-spec.md`
-4. `../constraints/current/implementation-plan.md`
+2. `../constraints/current/implementation-plan.md`
+3. `../constraints/current/requirements.md`
+4. `../constraints/current/api-spec.md`
 5. `../stitch/{模块}/code.html`
 
 ### 第二步：识别当前任务
@@ -163,12 +162,18 @@ archive 中的旧设计或旧说明不能作为当前事实实施。
 ### 第五步：反馈当前状态
 必须明确说明：
 
-- 已完成页面/组件
-- 已接入接口
-- mock 范围
-- 未完成项
-- 阻塞项
-- 是否需要 arch 发起 CR
+推荐按以下格式回写给 arch：
+
+- Phase:
+- Status: todo / in_progress / blocked / done / shipped
+- Completed UI:
+- Integrated APIs:
+- Mock Scope:
+- Remaining:
+- Blocking:
+- Integration Ready: yes / no
+- Need CR: yes / no
+- Notes:
 
 ### 第六步：按 Phase 启动 GSD
 默认按分配的 Phase 执行：
@@ -180,6 +185,7 @@ archive 中的旧设计或旧说明不能作为当前事实实施。
 5. `/gsd:ship N`
 
 若接口契约未稳定，不得直接进入最终 UI 实现，应先记录阻塞并反馈 arch。
+若使用 mock 推进，必须在回写中显式标记 mock 范围，并在真实契约稳定后优先收敛。
 
 ---
 
