@@ -322,6 +322,10 @@
   - Phase 5 / arch / 联调与验收
 - Current Blockers:
 - Next Step:
+- 最近完成项
+- 当前有效版本
+- 当前有效设计来源
+- 推荐启动阅读顺序
 
 新开会话时，必须优先从该文件恢复上下文，而不是通读所有历史文档。
 
@@ -330,16 +334,14 @@
 ## 推荐启动阅读顺序
 
 任何新会话默认应优先阅读：
-
 1. `constraints/current/project-status.md`
-2. `constraints/index.md`
-3. `constraints/current/requirements.md`
-4. `constraints/current/api-spec.md`
-5. `constraints/current/implementation-plan.md`
+2. `constraints/current/implementation-plan.md`
+3. `constraints/index.md`
+4. `constraints/current/requirements.md`
+5. `constraints/current/api-spec.md`
 6. `constraints/current/progress-tracking.md`
 
 只有在需要追溯历史时，才读取：
-
 - `constraints/change-requests/`
 - `constraints/archive/`
 
@@ -481,15 +483,19 @@ arch 在分发任务时，必须明确给出：
 - done
 - shipped
 
-你必须通过 `constraints/current/progress-tracking.md` 跟踪：
+你必须通过 `constraints/current/progress-tracking.md` 跟踪执行细项，而不是项目总览。
 
-- 当前任务状态
-- bro 当前进展
-- girl 当前进展
-- 当前阻塞
-- 联调状态
-- 验收结论
-- 下一步安排
+`progress-tracking.md` 只记录：
+- Phase
+- Owner
+- Status
+- Blocking
+- Last Update
+- Next Action
+- Integration Status
+- arch Review Notes
+
+项目总览必须维护在 `constraints/current/project-status.md`，不得混写到 `progress-tracking.md`。
 
 ---
 
