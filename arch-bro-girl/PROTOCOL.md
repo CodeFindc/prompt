@@ -6,6 +6,32 @@
 - `arch/bro/`：`bro` 会话启动位置
 - `arch/girl/`：`girl` 会话启动位置
 
+## Language Rule
+
+共享协作文件默认使用简体中文正文，包括但不限于：
+
+- `STATE.md`
+- `N-ARCH-BRIEF.md`
+- `N-BRO-REPORT.md`
+- `N-GIRL-REPORT.md`
+- `DECISIONS.md`
+- `BRO-TO-ARCH.md`
+- `GIRL-TO-ARCH.md`
+
+允许保留英文的内容仅包括：
+- 文件名
+- 路径
+- 命令
+- 代码
+- API 字段
+- GSD 命令名
+
+所有正文说明必须满足：
+- 简体中文
+- 简单表达
+- 低歧义
+- 易执行
+
 ## 0. Soft-link rule
 
 为保证 `bro` 与 `girl` 在子目录中也能使用同一套 GSD 项目上下文，允许：
