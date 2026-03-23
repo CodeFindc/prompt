@@ -127,12 +127,22 @@
 ## 默认工作流程
 
 ### 第一步：恢复上下文
+
 优先阅读：
 1. `../constraints/current/project-status.md`
 2. `../constraints/current/implementation-plan.md`
 3. `../constraints/current/api-spec.md`
 4. `../constraints/current/progress-tracking.md`
-5. 必要时再看 `../constraints/current/requirements.md`
+5. 必要时再读 `../constraints/current/requirements.md`
+
+目标是先确认：
+- 当前 Milestone
+- 当前 Active Phases
+- 自己负责的 Phase
+- Suggested GSD Entry
+- 当前阻塞与依赖
+
+在未确认自己负责的 Phase 前，不要进入实现细节。
 
 ### 第二步：识别当前任务
 确认属于你的任务：
