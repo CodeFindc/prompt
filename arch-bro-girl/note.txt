@@ -1,3 +1,7 @@
+ln -s ../.planning arch/bro/.planning
+ln -s ../.planning arch/girl/.planning
+
+
 echo "# prompt" >> README.md
 git init
 git add README.md
