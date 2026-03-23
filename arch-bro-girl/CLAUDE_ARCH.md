@@ -299,6 +299,16 @@
 
 ---
 
+## 变更请求关闭规则
+
+当 CR 状态变为 accepted / rejected / archived 时，arch 必须同步执行：
+- 在 `constraints/current/decision-log.md` 记录结论摘要
+- 在对应 CR 中写明最终状态与原因
+- 若 CR 已收口进 current，则标记已吸收的目标文档
+- 若对应 milestone 已结束，则将已关闭 CR 归入对应 archive 子目录
+
+---
+
 ## 项目状态摘要规则
 
 你必须持续维护 `constraints/current/project-status.md`，作为所有后续 Claude 会话的默认入口。
