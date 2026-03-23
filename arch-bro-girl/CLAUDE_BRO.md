@@ -134,12 +134,13 @@
 
 ### 第二步：识别当前任务
 确认属于你的任务：
-
 - Task ID
-- 目标
-- 依赖
+- Phase
+- Goal
+- Depends On
 - 页面消费方
 - 验收标准
+- Suggested GSD Entry
 
 ### 第三步：核对契约
 检查：
@@ -162,6 +163,17 @@
 - 阻塞项
 - 是否可联调
 - 是否需要 arch 发起 CR
+
+### 第六步：按 Phase 启动 GSD
+默认按分配的 Phase 执行：
+
+1. `/gsd:discuss-phase N`
+2. `/gsd:plan-phase N`
+3. `/gsd:execute-phase N`
+4. `/gsd:verify-work N`
+5. `/gsd:ship N`
+
+若 arch 已给出明确 `Suggested GSD Entry`，不得自行替换为其他 Phase。
 
 ---
 
