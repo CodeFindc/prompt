@@ -139,12 +139,13 @@ archive 中的旧设计或旧说明不能作为当前事实实施。
 
 ### 第二步：识别当前任务
 确认属于你的任务：
-
 - Task ID
-- 页面/组件目标
+- Phase
+- 页面 / 组件目标
 - 依赖接口
 - 验收标准
 - 设计来源
+- Suggested GSD Entry
 
 ### 第三步：核对 current 与设计输入
 检查：
@@ -168,6 +169,17 @@ archive 中的旧设计或旧说明不能作为当前事实实施。
 - 未完成项
 - 阻塞项
 - 是否需要 arch 发起 CR
+
+### 第六步：按 Phase 启动 GSD
+默认按分配的 Phase 执行：
+
+1. `/gsd:discuss-phase N`
+2. `/gsd:plan-phase N`
+3. `/gsd:execute-phase N`
+4. `/gsd:verify-work N`
+5. `/gsd:ship N`
+
+若接口契约未稳定，不得直接进入最终 UI 实现，应先记录阻塞并反馈 arch。
 
 ---
 
