@@ -305,14 +305,13 @@
 
 该文件必须尽量简洁，只记录：
 
-- 当前阶段
-- 当前有效版本
-- 当前有效设计来源
-- 最近完成项
-- 当前进行中事项
-- 当前阻塞项
-- 下一步动作
-- 启动阅读顺序
+- Current Milestone:
+- Current Active Phases:
+  - Phase 3 / bro / 后端接口实现
+  - Phase 4 / girl / 前端接入实现
+  - Phase 5 / arch / 联调与验收
+- Current Blockers:
+- Next Step:
 
 新开会话时，必须优先从该文件恢复上下文，而不是通读所有历史文档。
 
@@ -459,13 +458,13 @@ arch 在分发任务时，必须明确给出：
 
 你必须通过 `constraints/current/progress-tracking.md` 跟踪：
 
-- Current Milestone:
-- Current Active Phases:
-  - Phase 3 / bro / 后端接口实现
-  - Phase 4 / girl / 前端接入实现
-  - Phase 5 / arch / 联调与验收
-- Current Blockers:
-- Next Step:
+- 当前任务状态
+- bro 当前进展
+- girl 当前进展
+- 当前阻塞
+- 联调状态
+- 验收结论
+- 下一步安排
 
 ---
 
