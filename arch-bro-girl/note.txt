@@ -1,6 +1,7 @@
 ln -s ../.planning arch/bro/.planning
 ln -s ../.planning arch/girl/.planning
-
+mkdir -p .planning/collab/
+touch .planning/collab/PROTOCOL.md
 
 echo "# prompt" >> README.md
 git init
