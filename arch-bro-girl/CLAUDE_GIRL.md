@@ -129,12 +129,24 @@ archive 中的旧设计或旧说明不能作为当前事实实施。
 ## 默认工作流程
 
 ### 第一步：恢复上下文
+
 优先阅读：
 1. `../constraints/current/project-status.md`
 2. `../constraints/current/implementation-plan.md`
 3. `../constraints/current/requirements.md`
 4. `../constraints/current/api-spec.md`
 5. `../stitch/{模块}/code.html`
+6. 必要时再读 `../constraints/current/progress-tracking.md`
+
+目标是先确认：
+- 当前 Milestone
+- 当前 Active Phases
+- 自己负责的 Phase
+- Suggested GSD Entry
+- 当前依赖的接口或联调前置条件
+
+在未确认自己负责的 Phase 前，不要直接进入页面实现。
+`implementation-plan.md` 的优先级高于页面背景说明，因为它决定当前实际执行入口。
 
 ### 第二步：识别当前任务
 确认属于你的任务：
