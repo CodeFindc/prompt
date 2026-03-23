@@ -496,6 +496,8 @@ arch 在分发任务时，必须明确给出：
 - arch Review Notes
 
 项目总览必须维护在 `constraints/current/project-status.md`，不得混写到 `progress-tracking.md`。
+`progress-tracking.md` 只记录执行细项，不记录项目总览。
+项目总览必须维护在 `project-status.md`。
 
 ---
 
