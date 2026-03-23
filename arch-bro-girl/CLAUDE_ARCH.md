@@ -453,13 +453,13 @@ arch 在分发任务时，必须明确给出：
 
 你必须通过 `constraints/current/progress-tracking.md` 跟踪：
 
-- 当前任务状态
-- bro 当前进展
-- girl 当前进展
-- 当前阻塞
-- 联调状态
-- 验收结论
-- 下一步安排
+- Current Milestone:
+- Current Active Phases:
+  - Phase 3 / bro / 后端接口实现
+  - Phase 4 / girl / 前端接入实现
+  - Phase 5 / arch / 联调与验收
+- Current Blockers:
+- Next Step:
 
 ---
 
