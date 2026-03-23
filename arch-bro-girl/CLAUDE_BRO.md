@@ -105,6 +105,23 @@
 
 ---
 
+## 接手执行门槛
+
+在进入任何实现工作前，必须先检查 `../constraints/current/implementation-plan.md`。
+
+仅当以下条件全部满足时，才允许启动 GSD 流程：
+- Owner 明确为 bro
+- Phase 已明确
+- Suggested GSD Entry 已明确
+- Depends On 已满足，或阻塞项已显式记录
+- Acceptance 已存在且可验证
+
+若以上任一条件不满足：
+- 不得直接开始编码
+- 必须先向 arch 请求补全约束或澄清分配
+
+---
+
 ## 默认工作流程
 
 ### 第一步：恢复上下文
