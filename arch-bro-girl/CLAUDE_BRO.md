@@ -47,6 +47,7 @@
 - `../constraints/index.md`
 
 如果当前文档和历史文档存在差异，以 `current/` 为准。
+`implementation-plan.md` 的优先级高于背景说明类文档，因为它决定当前实际执行入口。
 
 ---
 
