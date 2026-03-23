@@ -160,10 +160,10 @@
 ### 第五步：反馈当前状态
 必须明确说明：
 
-按以下格式回写给 arch：
+推荐按以下格式回写给 arch：
 
 - Phase:
-- Status: todo / in_progress / blocked / done / shipped
+- Status: todo / in_progress / blocked / review / done / shipped
 - Completed:
 - Remaining:
 - Blocking:
