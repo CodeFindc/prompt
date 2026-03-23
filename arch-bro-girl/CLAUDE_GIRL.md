@@ -165,10 +165,8 @@ archive 中的旧设计或旧说明不能作为当前事实实施。
 推荐按以下格式回写给 arch：
 
 - Phase:
-- Status: todo / in_progress / blocked / done / shipped
-- Completed UI:
-- Integrated APIs:
-- Mock Scope:
+- Status: todo / in_progress / blocked / review / done / shipped
+- Completed:
 - Remaining:
 - Blocking:
 - Integration Ready: yes / no
