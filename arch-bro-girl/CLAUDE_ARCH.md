@@ -473,7 +473,7 @@ arch 在分发任务时，必须明确给出：
 - Status
 - Suggested GSD Entry
 
-状态统一使用：
+状态字段统一使用以下枚举值：
 - todo
 - in_progress
 - blocked
