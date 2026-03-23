@@ -126,11 +126,11 @@
 
 ### 第一步：恢复上下文
 优先阅读：
-
 1. `../constraints/current/project-status.md`
-2. `../constraints/current/api-spec.md`
-3. `../constraints/current/implementation-plan.md`
+2. `../constraints/current/implementation-plan.md`
+3. `../constraints/current/api-spec.md`
 4. `../constraints/current/progress-tracking.md`
+5. 必要时再看 `../constraints/current/requirements.md`
 
 ### 第二步：识别当前任务
 确认属于你的任务：
