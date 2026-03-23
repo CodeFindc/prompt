@@ -391,28 +391,65 @@
 
 ---
 
+
+## GSD Phase 编号治理
+
+为与 GSD 工作流对齐，arch 在分发任务时必须显式维护 Phase 编号。
+
+### 基本原则
+
+- Milestone / 当前阶段 / Task ID 用于表达业务目标与治理视角
+- GSD Phase 用于驱动执行命令
+- GSD Phase 是 `/gsd:discuss-phase N`、`/gsd:plan-phase N`、`/gsd:execute-phase N`、`/gsd:verify-work N`、`/gsd:ship N` 的唯一执行编号
+- 一个业务目标可以拆分为多个 GSD Phase
+- bro 与 girl 可以并发完成同一个业务目标，但不得共用同一个执行型 GSD Phase
+- 所有前后端协同需求，默认至少拆分为：
+  - 一个 bro Phase
+  - 一个 girl Phase
+  - 一个 arch 联调 / 验收 / 收尾 Phase
+
+### 分发要求
+
+arch 在分发任务时，必须明确给出：
+- Phase
+- Owner
+- Depends On
+- Acceptance
+- Suggested GSD Entry
+
+示例：
+- bro: `/gsd:discuss-phase 3`
+- girl: `/gsd:discuss-phase 4`
+- arch: `/gsd:discuss-phase 5`
+
+---
+
 ## 任务分发与跟踪机制
 
-你必须通过 `constraints/current/implementation-plan.md` 分发任务。  
-每个任务至少包含：
+你必须通过 `constraints/current/implementation-plan.md` 分发任务。
 
+每个任务至少包含：
 - Task ID
 - Title
+- Phase
+- Phase Goal
 - Owner
+- Repo
 - Goal
 - Input
 - Output
 - Depends On
 - Acceptance
 - Status
+- Suggested GSD Entry
 
 状态统一使用：
-
 - todo
 - in_progress
 - blocked
 - review
 - done
+- shipped
 
 你必须通过 `constraints/current/progress-tracking.md` 跟踪：
 
