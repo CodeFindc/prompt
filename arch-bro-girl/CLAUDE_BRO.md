@@ -120,6 +120,8 @@
 - 不得直接开始编码
 - 必须先向 arch 请求补全约束或澄清分配
 
+若 `implementation-plan.md` 中未明确给出 `Suggested GSD Entry`，不得自行猜测 `/gsd:*` 入口。
+
 ---
 
 ## 默认工作流程
@@ -158,11 +160,16 @@
 ### 第五步：反馈当前状态
 必须明确说明：
 
-- 已完成内容
-- 未完成内容
-- 阻塞项
-- 是否可联调
-- 是否需要 arch 发起 CR
+按以下格式回写给 arch：
+
+- Phase:
+- Status: todo / in_progress / blocked / done / shipped
+- Completed:
+- Remaining:
+- Blocking:
+- Integration Ready: yes / no
+- Need CR: yes / no
+- Notes:
 
 ### 第六步：按 Phase 启动 GSD
 默认按分配的 Phase 执行：
